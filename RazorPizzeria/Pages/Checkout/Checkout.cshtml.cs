@@ -13,7 +13,7 @@ namespace RazorPizzeria.Pages.Checkout
         public string PizzaName { get; set; }
         public float PizzaPrice { get; set; }
         public string ImageTitle { get; set; }
-
+     
         private readonly ApplicationDbContext _context;
         public CheckoutModel(ApplicationDbContext context)
         {

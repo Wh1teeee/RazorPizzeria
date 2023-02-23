@@ -1,0 +1,44 @@
+﻿@page "{id:int}"
+@model RazorPizzeria.Pages.Forms.EditCustomerModel
+@{
+}
+
+
+<div class="container">
+    <h1>Edit Customer</h1>
+    <form method="post">
+        <input asp-for="csm.Id" type="hidden" />
+        <div class="row">
+            <div class="col-md-4">
+                <input asp-for="csm.Name" class=" mb-5" /> Name
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text" asp-for="csm.Email" class=" mb-5" /> E-mail
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text" asp-for="csm.Address" class=" mb-5"  /> Address
+        <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text" asp-for="csm.City" class=" mb-5" /> City
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text" asp-for="csm.Phone" class=" mb-5 " /> Phone
+                <br />
+            </div>
+        </div>
+        <input type="submit" class="btn btn-primary mt-1" value="Save"></input>
+        <a class="btn btn-primary mt-1" href="/Customers">Cancel</a>
+    </form>
+</div>
